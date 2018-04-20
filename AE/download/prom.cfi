@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.87xd
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.87xd
+DATE            04/20/2018 - 11:19
+SOURCE          D:\GitHub\AE-XILLYBUS\AE\download\prom.mcs
+DEVICE          8192K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x6940AFE8
+START_ADDRESS   0x00000000 END_ADDRESS 0x0016ABDB DIRECTION_UP   "D:/GitHub/AE-XILLYBUS/AE/ae_inst.bit" 6slx45tcsg324

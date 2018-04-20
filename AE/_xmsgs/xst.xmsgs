@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="0" delta="new" >Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\xillybus.v" Line 59: Port <arg fmt="%s" index="1">trn_tbuf_av</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 458: Assignment to <arg fmt="%s" index="1">mim_rx_rdata_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper.v" Line 194: Assignment to <arg fmt="%s" index="1">tied_to_ground_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper.v" Line 195: Assignment to <arg fmt="%s" index="1">tied_to_ground_vec_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper.v" Line 196: Assignment to <arg fmt="%s" index="1">tied_to_vcc_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper.v" Line 197: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 226: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 573: Assignment to <arg fmt="%s" index="1">rxcharisk0_float_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 574: Assignment to <arg fmt="%s" index="1">rxcharisk1_float_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 577: Assignment to <arg fmt="%s" index="1">rxdisperr0_float_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 578: Assignment to <arg fmt="%s" index="1">rxdisperr1_float_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 579: Assignment to <arg fmt="%s" index="1">rxnotintable0_float_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\gtpa1_dual_wrapper_tile.v" Line 580: Assignment to <arg fmt="%s" index="1">rxnotintable1_float_i</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 539: Assignment to <arg fmt="%s" index="1">gt_rx_valid</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 773: Assignment to <arg fmt="%s" index="1">cfg_ltssm_state</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 786: Assignment to <arg fmt="%s" index="1">dbg_bad_dllp_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 787: Assignment to <arg fmt="%s" index="1">dbg_bad_tlp_lcrc</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 788: Assignment to <arg fmt="%s" index="1">dbg_bad_tlp_seq_num</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 789: Assignment to <arg fmt="%s" index="1">dbg_bad_tlp_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 790: Assignment to <arg fmt="%s" index="1">dbg_dl_protocol_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 791: Assignment to <arg fmt="%s" index="1">dbg_fc_protocol_err_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 792: Assignment to <arg fmt="%s" index="1">dbg_mlfrmd_length</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 793: Assignment to <arg fmt="%s" index="1">dbg_mlfrmd_mps</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 794: Assignment to <arg fmt="%s" index="1">dbg_mlfrmd_tcvc</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 795: Assignment to <arg fmt="%s" index="1">dbg_mlfrmd_tlp_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 796: Assignment to <arg fmt="%s" index="1">dbg_mlfrmd_unrec_type</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 797: Assignment to <arg fmt="%s" index="1">dbg_poistlpstatus</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 798: Assignment to <arg fmt="%s" index="1">dbg_rcvr_overflow_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 799: Assignment to <arg fmt="%s" index="1">dbg_reg_detected_correctable</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 800: Assignment to <arg fmt="%s" index="1">dbg_reg_detected_fatal</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 801: Assignment to <arg fmt="%s" index="1">dbg_reg_detected_non_fatal</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 802: Assignment to <arg fmt="%s" index="1">dbg_reg_detected_unsupported</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 803: Assignment to <arg fmt="%s" index="1">dbg_rply_rollover_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 804: Assignment to <arg fmt="%s" index="1">dbg_rply_timeout_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 805: Assignment to <arg fmt="%s" index="1">dbg_ur_no_bar_hit</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 806: Assignment to <arg fmt="%s" index="1">dbg_ur_pois_cfg_wr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 807: Assignment to <arg fmt="%s" index="1">dbg_ur_status</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 808: Assignment to <arg fmt="%s" index="1">dbg_ur_unsup_msg</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 844: Assignment to <arg fmt="%s" index="1">pipe_tx_char_disp_val_a</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie.v" Line 845: Assignment to <arg fmt="%s" index="1">pipe_tx_char_disp_val_b</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\xillybus_core.v" Line 1: Empty module &lt;<arg fmt="%s" index="1">xillybus_core</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 43: Assignment to <arg fmt="%s" index="1">user_w_write_32_wren</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 45: Assignment to <arg fmt="%s" index="1">user_w_write_32_data</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 46: Assignment to <arg fmt="%s" index="1">user_w_write_32_open</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 53: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">GPIO_LED</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 53: Assignment to <arg fmt="%s" index="1">GPIO_LED</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 57: Assignment to <arg fmt="%s" index="1">quiesce</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_clock.v" Line 132: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 67: Assignment to <arg fmt="%s" index="1">clk_50M</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 70: Assignment to <arg fmt="%s" index="1">LOCKED</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 93: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 123: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_fifo.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">s6_fifo</arg>&gt; remains a black box.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">GPIO_LED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xillybus_ins</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">user_w_write_32_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xillybus_ins</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">quiesce</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xillybus_ins</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">user_w_write_32_wren</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xillybus_ins</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">user_w_write_32_open</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xillybus_ins</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">65</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_OUT1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/ae_top.v</arg>&quot; line <arg fmt="%s" index="2">65</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">trn_tbuf_av</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">trn_fc_nph</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">trn_fc_npd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">trn_fc_ph</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">trn_fc_pd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_do</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_interrupt_do</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_interrupt_mmenable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_pcie_link_state_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_command</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_lstatus</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">trn_tcfg_req_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_rd_wr_done_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_err_cpl_rdy_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_interrupt_msienable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">cfg_to_turnoff_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/src/xillybus.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">received_hot_reset</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pcie</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXCHARISK1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXDISPERR0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXDISPERR1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXNOTINTABLE0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXNOTINTABLE1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXCLKCORCNT0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXCLKCORCNT1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXDATA1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXSTATUS1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_GTPCLKOUT1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_PLLLKDET1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RESETDONE1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXELECIDLE1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_PHYSTATUS1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXVALID0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_RXVALID1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_TXN1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">d:/github/ae-xillybus/ae/ipcore_dir/pcie/source/pcie.v</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TILE0_TXP1_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GT_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">waddr_i&lt;11:11&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">raddr_i&lt;11:11&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">pll_base_i</arg> in unit <arg fmt="%s" index="2">pll_base_i</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">din_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">din_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ae_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">din_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ae_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;din_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">din_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ae_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;din_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">din_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ae_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;din_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">din_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ae_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;din_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_s6_request_ins/tlp_compose/state_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;pcie_s6_request_ins/tlp_compose/state_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/queue_valid</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/queue_valid_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/send_state_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/send_state_0_1&gt; &lt;pcie_send_dma_ins/send_state_0_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_s6_request_ins/tlp_compose/state_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;pcie_s6_request_ins/tlp_compose/state_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/send_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/send_state_1_1&gt; &lt;pcie_send_dma_ins/send_state_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_recv_dma_ins/rdrq_req</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_recv_dma_ins/rdrq_req_1&gt; &lt;pcie_recv_dma_ins/rdrq_req_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/send_state_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/send_state_2_1&gt; &lt;pcie_send_dma_ins/send_state_2_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_s6_request_ins/tlp_compose/state_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;pcie_s6_request_ins/tlp_compose/state_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/queue_valid</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/queue_valid_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/send_state_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/send_state_0_1&gt; &lt;pcie_send_dma_ins/send_state_0_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_s6_request_ins/tlp_compose/state_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;pcie_s6_request_ins/tlp_compose/state_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/send_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/send_state_1_1&gt; &lt;pcie_send_dma_ins/send_state_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_recv_dma_ins/rdrq_req</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_recv_dma_ins/rdrq_req_1&gt; &lt;pcie_recv_dma_ins/rdrq_req_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pcie_send_dma_ins/send_state_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xillybus_ins/xillybus_core_ins</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;pcie_send_dma_ins/send_state_2_1&gt; &lt;pcie_send_dma_ins/send_state_2_2&gt; </arg>
+</msg>
+
+</messages>
+
