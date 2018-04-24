@@ -5,6 +5,7 @@ fifo_generator_v8_4_readme.txt
 s6_fifo.asy
 s6_fifo.gise
 s6_fifo.ngc
+s6_fifo.sym
 s6_fifo.v
 s6_fifo.veo
 s6_fifo.xco

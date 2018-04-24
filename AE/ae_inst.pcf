@@ -1,14 +1,28 @@
 //! **************************************************************************
-// Written by: Map O.87xd on Fri Apr 20 10:59:29 2018
+// Written by: Map O.87xd on Tue Apr 24 09:34:51 2018
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "RESET" LOCATE = SITE "B2" LEVEL 1;
+COMP "DATA_AD_IN<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "DATA_AD_IN<1>" LOCATE = SITE "P11" LEVEL 1;
+COMP "DATA_AD_IN<2>" LOCATE = SITE "M11" LEVEL 1;
+COMP "DATA_AD_IN<3>" LOCATE = SITE "T8" LEVEL 1;
+COMP "DATA_AD_IN<4>" LOCATE = SITE "M8" LEVEL 1;
+COMP "DATA_AD_IN<5>" LOCATE = SITE "N6" LEVEL 1;
+COMP "DATA_AD_IN<6>" LOCATE = SITE "R5" LEVEL 1;
+COMP "DATA_AD_IN<7>" LOCATE = SITE "U10" LEVEL 1;
+COMP "DATA_AD_IN<8>" LOCATE = SITE "L16" LEVEL 1;
+COMP "DATA_AD_IN<9>" LOCATE = SITE "T4" LEVEL 1;
 COMP "PCIE_250M_N" LOCATE = SITE "A8" LEVEL 1;
 COMP "PCIE_250M_P" LOCATE = SITE "B8" LEVEL 1;
 COMP "CLK_AD_10M" LOCATE = SITE "T12" LEVEL 1;
 COMP "CLK_IN_50M" LOCATE = SITE "G8" LEVEL 1;
 COMP "PCIE_PERST_B_LS" LOCATE = SITE "G9" LEVEL 1;
+COMP "DATA_AD_IN<10>" LOCATE = SITE "V6" LEVEL 1;
+COMP "DATA_AD_IN<11>" LOCATE = SITE "V9" LEVEL 1;
+COMP "DATA_AD_IN<12>" LOCATE = SITE "T9" LEVEL 1;
+COMP "DATA_AD_IN<13>" LOCATE = SITE "V11" LEVEL 1;
 COMP "PCIE_RX0_N" LOCATE = SITE "C5" LEVEL 1;
 COMP "PCIE_RX0_P" LOCATE = SITE "D5" LEVEL 1;
 COMP "PCIE_TX0_N" LOCATE = SITE "A4" LEVEL 1;
@@ -118,10 +132,10 @@ PIN xillybus_ins/pcie/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16_pins<29>
         "xillybus_ins/pcie/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16"
         PINNAME CLKB;
 PIN
-        fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<27>
         = BEL
-        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
-        PINNAME CLKB;
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram"
+        PINNAME CLKBRDCLK;
 PIN
         xillybus_ins/xillybus_core_ins/pcie_recv_dma_ins/Mram_rd_dma_address2_pins<16>
         = BEL
@@ -202,7 +216,9 @@ TIMEGRP xillybus_ins_pcie_clk_62_5 = BEL "xillybus_ins/pcie/phy_bufg" PIN
         PIN
         "xillybus_ins/pcie/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16_pins<29>"
         PIN
-        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<27>"
+        BEL
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_0"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_1"
         BEL
@@ -217,6 +233,8 @@ TIMEGRP xillybus_ins_pcie_clk_62_5 = BEL "xillybus_ins/pcie/phy_bufg" PIN
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_6"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_7"
+        BEL
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_0"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_1"
         BEL
@@ -246,6 +264,10 @@ TIMEGRP xillybus_ins_pcie_clk_62_5 = BEL "xillybus_ins/pcie/phy_bufg" PIN
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_6"
         BEL
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_7"
+        BEL
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0"
+        BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_2"
@@ -274,6 +296,8 @@ TIMEGRP xillybus_ins_pcie_clk_62_5 = BEL "xillybus_ins/pcie/phy_bufg" PIN
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_6"
         BEL
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7"
+        BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2"
@@ -285,6 +309,8 @@ TIMEGRP xillybus_ins_pcie_clk_62_5 = BEL "xillybus_ins/pcie/phy_bufg" PIN
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6"
+        BEL
+        "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7"
         BEL
         "fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
         BEL
@@ -4101,12 +4127,12 @@ TS_PCIE_CLK = PERIOD TIMEGRP "PCIE_CLK" 10 ns HIGH 50%;
 TS_GT_REFCLK_OUT = PERIOD TIMEGRP "GT_REFCLK_OUT" 10 ns HIGH 50%;
 TS_xillybus_ins_pcie_gt_refclk_buf = PERIOD TIMEGRP
         "xillybus_ins_pcie_gt_refclk_buf" TS_GT_REFCLK_OUT HIGH 50%;
+TS_xillybus_ins_pcie_clk_125 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_125"
+        TS_xillybus_ins_pcie_gt_refclk_buf / 1.25 HIGH 50%;
 TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_62_5"
         TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 HIGH 50%;
 TS_xillybus_ins_pcie_clk_250 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_250"
         TS_xillybus_ins_pcie_gt_refclk_buf / 2.5 HIGH 50%;
-TS_xillybus_ins_pcie_clk_125 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_125"
-        TS_xillybus_ins_pcie_gt_refclk_buf / 1.25 HIGH 50%;
 PIN RESET_pins<0> = BEL "RESET" PINNAME PAD;
 PIN PCIE_PERST_B_LS_pins<0> = BEL "PCIE_PERST_B_LS" PINNAME PAD;
 PIN "RESET_pins<0>" TIG;

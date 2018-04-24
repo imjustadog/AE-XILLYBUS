@@ -58,7 +58,7 @@ s6_fifo your_instance_name (
   .rst(rst), // input rst
   .wr_clk(wr_clk), // input wr_clk
   .rd_clk(rd_clk), // input rd_clk
-  .din(din), // input [15 : 0] din
+  .din(din), // input [31 : 0] din
   .wr_en(wr_en), // input wr_en
   .rd_en(rd_en), // input rd_en
   .dout(dout), // output [31 : 0] dout

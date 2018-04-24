@@ -73,10 +73,10 @@ entity s6_fifo_top_wrapper is
       CLK                            : IN STD_LOGIC;
       BACKUP                         : IN STD_LOGIC;
       BACKUP_MARKER                  : IN STD_LOGIC;
-      DIN                            : IN STD_LOGIC_VECTOR(16-1 downto 0);
-      PROG_EMPTY_THRESH              : IN STD_LOGIC_VECTOR(7-1 downto 0);
-      PROG_EMPTY_THRESH_ASSERT       : IN STD_LOGIC_VECTOR(7-1 downto 0);
-      PROG_EMPTY_THRESH_NEGATE       : IN STD_LOGIC_VECTOR(7-1 downto 0);
+      DIN                            : IN STD_LOGIC_VECTOR(32-1 downto 0);
+      PROG_EMPTY_THRESH              : IN STD_LOGIC_VECTOR(8-1 downto 0);
+      PROG_EMPTY_THRESH_ASSERT       : IN STD_LOGIC_VECTOR(8-1 downto 0);
+      PROG_EMPTY_THRESH_NEGATE       : IN STD_LOGIC_VECTOR(8-1 downto 0);
       PROG_FULL_THRESH               : IN STD_LOGIC_VECTOR(8-1 downto 0);
       PROG_FULL_THRESH_ASSERT        : IN STD_LOGIC_VECTOR(8-1 downto 0);
       PROG_FULL_THRESH_NEGATE        : IN STD_LOGIC_VECTOR(8-1 downto 0);
@@ -100,7 +100,7 @@ entity s6_fifo_top_wrapper is
       PROG_EMPTY                     : OUT STD_LOGIC;
       PROG_FULL                      : OUT STD_LOGIC;
       VALID                          : OUT STD_LOGIC;
-      RD_DATA_COUNT                  : OUT STD_LOGIC_VECTOR(7-1 downto 0);
+      RD_DATA_COUNT                  : OUT STD_LOGIC_VECTOR(8-1 downto 0);
       UNDERFLOW                      : OUT STD_LOGIC;
       WR_ACK                         : OUT STD_LOGIC;
       WR_DATA_COUNT                  : OUT STD_LOGIC_VECTOR(8-1 downto 0);
@@ -317,7 +317,7 @@ architecture xilinx of s6_fifo_top_wrapper is
            RST                       : IN  std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(16-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(32-1 DOWNTO 0);
            DOUT                      : OUT std_logic_vector(32-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);

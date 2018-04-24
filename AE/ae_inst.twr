@@ -106,494 +106,6 @@ Slack: 6.666ns (period - (min high pulse limit / (high pulse / period)))
 --------------------------------------------------------------------------------
 
 ================================================================================
-Timing constraint: TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP 
-"xillybus_ins_pcie_clk_62_5"         TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 
-HIGH 50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 140528 paths analyzed, 12222 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  16.000ns.
---------------------------------------------------------------------------------
-
-Paths for end point xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6 (SLICE_X31Y50.CE), 9 paths
---------------------------------------------------------------------------------
-Slack (setup path):     5.463ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      10.439ns (Levels of Logic = 2)
-  Clock Path Skew:      0.007ns (0.486 - 0.479)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X44Y43.CQ      Tcko                  0.447   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-    SLICE_X27Y34.D4      net (fanout=156)      2.119   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y50.CE      net (fanout=24)       3.278   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y50.CLK     Tceck                 0.324   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length[7]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6
-    -------------------------------------------------  ---------------------------
-    Total                                     10.439ns (1.289ns logic, 9.150ns route)
-                                                       (12.3% logic, 87.7% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     5.507ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      10.395ns (Levels of Logic = 2)
-  Clock Path Skew:      0.007ns (0.486 - 0.479)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X44Y43.BQ      Tcko                  0.447   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1
-    SLICE_X27Y34.D5      net (fanout=51)       2.075   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y50.CE      net (fanout=24)       3.278   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y50.CLK     Tceck                 0.324   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length[7]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6
-    -------------------------------------------------  ---------------------------
-    Total                                     10.395ns (1.289ns logic, 9.106ns route)
-                                                       (12.4% logic, 87.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     5.991ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      9.883ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.021ns (0.486 - 0.507)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X19Y47.CQ      Tcko                  0.391   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-    SLICE_X27Y34.D1      net (fanout=74)       1.619   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y50.CE      net (fanout=24)       3.278   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y50.CLK     Tceck                 0.324   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length[7]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_6
-    -------------------------------------------------  ---------------------------
-    Total                                      9.883ns (1.233ns logic, 8.650ns route)
-                                                       (12.5% logic, 87.5% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7 (SLICE_X31Y50.CE), 9 paths
---------------------------------------------------------------------------------
-Slack (setup path):     5.471ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      10.431ns (Levels of Logic = 2)
-  Clock Path Skew:      0.007ns (0.486 - 0.479)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X44Y43.CQ      Tcko                  0.447   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-    SLICE_X27Y34.D4      net (fanout=156)      2.119   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y50.CE      net (fanout=24)       3.278   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y50.CLK     Tceck                 0.316   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length[7]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7
-    -------------------------------------------------  ---------------------------
-    Total                                     10.431ns (1.281ns logic, 9.150ns route)
-                                                       (12.3% logic, 87.7% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     5.515ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      10.387ns (Levels of Logic = 2)
-  Clock Path Skew:      0.007ns (0.486 - 0.479)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X44Y43.BQ      Tcko                  0.447   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1
-    SLICE_X27Y34.D5      net (fanout=51)       2.075   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y50.CE      net (fanout=24)       3.278   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y50.CLK     Tceck                 0.316   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length[7]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7
-    -------------------------------------------------  ---------------------------
-    Total                                     10.387ns (1.281ns logic, 9.106ns route)
-                                                       (12.3% logic, 87.7% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     5.999ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      9.875ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.021ns (0.486 - 0.507)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X19Y47.CQ      Tcko                  0.391   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-    SLICE_X27Y34.D1      net (fanout=74)       1.619   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y50.CE      net (fanout=24)       3.278   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y50.CLK     Tceck                 0.316   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length[7]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_Length_7
-    -------------------------------------------------  ---------------------------
-    Total                                      9.875ns (1.225ns logic, 8.650ns route)
-                                                       (12.4% logic, 87.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0 (SLICE_X31Y52.CE), 9 paths
---------------------------------------------------------------------------------
-Slack (setup path):     5.646ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      10.252ns (Levels of Logic = 2)
-  Clock Path Skew:      0.003ns (0.482 - 0.479)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X44Y43.CQ      Tcko                  0.447   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-    SLICE_X27Y34.D4      net (fanout=156)      2.119   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y52.CE      net (fanout=24)       3.091   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y52.CLK     Tceck                 0.324   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE[0]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0
-    -------------------------------------------------  ---------------------------
-    Total                                     10.252ns (1.289ns logic, 8.963ns route)
-                                                       (12.6% logic, 87.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     5.690ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      10.208ns (Levels of Logic = 2)
-  Clock Path Skew:      0.003ns (0.482 - 0.479)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X44Y43.BQ      Tcko                  0.447   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd2
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1
-    SLICE_X27Y34.D5      net (fanout=51)       2.075   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_state_FSM_FFd1
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y52.CE      net (fanout=24)       3.091   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y52.CLK     Tceck                 0.324   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE[0]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0
-    -------------------------------------------------  ---------------------------
-    Total                                     10.208ns (1.289ns logic, 8.919ns route)
-                                                       (12.6% logic, 87.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     6.174ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0 (FF)
-  Requirement:          16.000ns
-  Data Path Delay:      9.696ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.025ns (0.482 - 0.507)
-  Source Clock:         bus_clk rising at 0.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X19Y47.CQ      Tcko                  0.391   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-    SLICE_X27Y34.D1      net (fanout=74)       1.619   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/queue_valid
-    SLICE_X27Y34.D       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/fifo_wants_piping
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv11
-    SLICE_X15Y83.C6      net (fanout=4)        3.753   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1316_inv1
-    SLICE_X15Y83.C       Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/do_packet
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv1
-    SLICE_X31Y52.CE      net (fanout=24)       3.091   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/_n1343_inv
-    SLICE_X31Y52.CLK     Tceck                 0.324   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE[0]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/send_lastDWBE_0
-    -------------------------------------------------  ---------------------------
-    Total                                      9.696ns (1.233ns logic, 8.463ns route)
-                                                       (12.7% logic, 87.3% route)
-
---------------------------------------------------------------------------------
-
-Hold Paths: TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_62_5"
-        TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 HIGH 50%;
---------------------------------------------------------------------------------
-
-Paths for end point xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending (SLICE_X47Y67.AX), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.360ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.360ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
-  Source Clock:         bus_clk rising at 16.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending to xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X47Y67.AQ      Tcko                  0.198   xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_limitsvalid
-                                                       xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending
-    SLICE_X47Y67.AX      net (fanout=6)        0.103   xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending
-    SLICE_X47Y67.CLK     Tckdi       (-Th)    -0.059   xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_limitsvalid
-                                                       xillybus_ins/xillybus_core_ins/unitw_1_ins/unitw_1_eof_pending
-    -------------------------------------------------  ---------------------------
-    Total                                      0.360ns (0.257ns logic, 0.103ns route)
-                                                       (71.4% logic, 28.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point xillybus_ins/pcie/PCIE_A1 (PCIE_X0Y0.TRNTSOFN), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.368ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_tsof_n (FF)
-  Destination:          xillybus_ins/pcie/PCIE_A1 (CPU)
-  Requirement:          0.000ns
-  Data Path Delay:      0.369ns (Levels of Logic = 0)
-  Clock Path Skew:      0.001ns (0.068 - 0.067)
-  Source Clock:         bus_clk rising at 16.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_tsof_n to xillybus_ins/pcie/PCIE_A1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X10Y100.CQ     Tcko                  0.234   xillybus_ins/trn_tsof_n
-                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_tsof_n
-    PCIE_X0Y0.TRNTSOFN   net (fanout=2)        0.985   xillybus_ins/trn_tsof_n
-    PCIE_X0Y0.USERCLK    Tpcickd_TRNTS(-Th)     0.850   xillybus_ins/pcie/PCIE_A1
-                                                       xillybus_ins/pcie/PCIE_A1
-    -------------------------------------------------  ---------------------------
-    Total                                      0.369ns (-0.616ns logic, 0.985ns route)
-                                                       (-166.9% logic, 266.9% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_end_offset_1 (SLICE_X50Y33.A5), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.369ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_offset_minus1_1 (FF)
-  Destination:          xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_end_offset_1 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.371ns (Levels of Logic = 1)
-  Clock Path Skew:      0.002ns (0.045 - 0.043)
-  Source Clock:         bus_clk rising at 16.000ns
-  Destination Clock:    bus_clk rising at 16.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_offset_minus1_1 to xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_end_offset_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X51Y33.BQ      Tcko                  0.198   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_offset_minus1[3]
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_offset_minus1_1
-    SLICE_X50Y33.A5      net (fanout=2)        0.052   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_offset_minus1[1]
-    SLICE_X50Y33.CLK     Tah         (-Th)    -0.121   xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_end_offset[9]
-                                                       xillybus_ins/xillybus_core_ins/mux13411
-                                                       xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/wr_end_offset_1
-    -------------------------------------------------  ---------------------------
-    Total                                      0.371ns (0.319ns logic, 0.052ns route)
-                                                       (86.0% logic, 14.0% route)
-
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_62_5"
-        TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 0.000ns (period - min period limit)
-  Period: 16.000ns
-  Min period limit: 16.000ns (62.500MHz) (Tpciper_USERCLK)
-  Physical resource: xillybus_ins/pcie/PCIE_A1/USERCLK
-  Logical resource: xillybus_ins/pcie/PCIE_A1/USERCLK
-  Location pin: PCIE_X0Y0.USERCLK
-  Clock network: bus_clk
---------------------------------------------------------------------------------
-Slack: 12.876ns (period - min period limit)
-  Period: 16.000ns
-  Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
-  Physical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKAWRCLK
-  Logical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKAWRCLK
-  Location pin: RAMB8_X2Y18.CLKAWRCLK
-  Clock network: bus_clk
---------------------------------------------------------------------------------
-Slack: 12.876ns (period - min period limit)
-  Period: 16.000ns
-  Min period limit: 3.124ns (320.102MHz) (Trper_CLKB(Fmax))
-  Physical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKBRDCLK
-  Logical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKBRDCLK
-  Location pin: RAMB8_X2Y18.CLKBRDCLK
-  Clock network: bus_clk
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: TS_xillybus_ins_pcie_clk_250 = PERIOD TIMEGRP 
-"xillybus_ins_pcie_clk_250"         TS_xillybus_ins_pcie_gt_refclk_buf / 2.5 
-HIGH 50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 component switching limit errors)
- Minimum period is   3.125ns.
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_xillybus_ins_pcie_clk_250 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_250"
-        TS_xillybus_ins_pcie_gt_refclk_buf / 2.5 HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 0.875ns (period - min period limit)
-  Period: 4.000ns
-  Min period limit: 3.125ns (320.000MHz) (Tgtpcper_RXUSRCLK)
-  Physical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/RXUSRCLK0
-  Logical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/RXUSRCLK0
-  Location pin: GTPA1_DUAL_X0Y0.RXUSRCLK0
-  Clock network: xillybus_ins/pcie/mgt_clk_2x
---------------------------------------------------------------------------------
-Slack: 0.875ns (period - min period limit)
-  Period: 4.000ns
-  Min period limit: 3.125ns (320.000MHz) (Tgtpcper_TXUSRCLK)
-  Physical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/TXUSRCLK0
-  Logical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/TXUSRCLK0
-  Location pin: GTPA1_DUAL_X0Y0.TXUSRCLK0
-  Clock network: xillybus_ins/pcie/mgt_clk_2x
---------------------------------------------------------------------------------
-Slack: 2.270ns (period - min period limit)
-  Period: 4.000ns
-  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
-  Physical resource: xillybus_ins/pcie/mgt2x_bufg/I0
-  Logical resource: xillybus_ins/pcie/mgt2x_bufg/I0
-  Location pin: BUFGMUX_X3Y13.I0
-  Clock network: xillybus_ins/pcie/clk_250
---------------------------------------------------------------------------------
-
-================================================================================
 Timing constraint: TS_xillybus_ins_pcie_clk_125 = PERIOD TIMEGRP 
 "xillybus_ins_pcie_clk_125"         TS_xillybus_ins_pcie_gt_refclk_buf / 1.25 
 HIGH 50%;
@@ -813,6 +325,274 @@ Slack: 1.750ns (period - min period limit)
   Clock network: xillybus_ins/pcie/mgt_clk
 --------------------------------------------------------------------------------
 
+================================================================================
+Timing constraint: TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP 
+"xillybus_ins_pcie_clk_62_5"         TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 140571 paths analyzed, 12248 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  16.000ns.
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_4 (SLICE_X43Y30.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     5.152ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_4 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      10.707ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.036ns (0.553 - 0.589)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n to xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y97.BQ      Tcko                  0.391   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+    SLICE_X29Y106.D4     net (fanout=172)      1.140   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+    SLICE_X29Y106.D      Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/wakeup_count[2]
+                                                       xillybus_ins/xillybus_core_ins/bus_rst_n_w_inv561_INV_0
+    SLICE_X43Y30.SR      net (fanout=167)      8.471   xillybus_ins/xillybus_core_ins/bus_rst_n_w_inv
+    SLICE_X43Y30.CLK     Tsrck                 0.446   xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx[4]
+                                                       xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.707ns (1.096ns logic, 9.611ns route)
+                                                       (10.2% logic, 89.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/messages_ins/msg_finish_0 (SLICE_X42Y30.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     5.154ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/messages_ins/msg_finish_0 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      10.705ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.036ns (0.553 - 0.589)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n to xillybus_ins/xillybus_core_ins/messages_ins/msg_finish_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y97.BQ      Tcko                  0.391   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+    SLICE_X29Y106.D4     net (fanout=172)      1.140   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+    SLICE_X29Y106.D      Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/wakeup_count[2]
+                                                       xillybus_ins/xillybus_core_ins/bus_rst_n_w_inv561_INV_0
+    SLICE_X42Y30.SR      net (fanout=167)      8.471   xillybus_ins/xillybus_core_ins/bus_rst_n_w_inv
+    SLICE_X42Y30.CLK     Tsrck                 0.444   xillybus_ins/xillybus_core_ins/messages_ins/msg_finish[1]
+                                                       xillybus_ins/xillybus_core_ins/messages_ins/msg_finish_0
+    -------------------------------------------------  ---------------------------
+    Total                                     10.705ns (1.094ns logic, 9.611ns route)
+                                                       (10.2% logic, 89.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_3 (SLICE_X43Y30.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     5.176ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_3 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      10.683ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.036ns (0.553 - 0.589)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n to xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y97.BQ      Tcko                  0.391   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+    SLICE_X29Y106.D4     net (fanout=172)      1.140   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/bus_rst_n
+    SLICE_X29Y106.D      Tilo                  0.259   xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/wakeup_count[2]
+                                                       xillybus_ins/xillybus_core_ins/bus_rst_n_w_inv561_INV_0
+    SLICE_X43Y30.SR      net (fanout=167)      8.471   xillybus_ins/xillybus_core_ins/bus_rst_n_w_inv
+    SLICE_X43Y30.CLK     Tsrck                 0.422   xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx[4]
+                                                       xillybus_ins/xillybus_core_ins/messages_ins/msg_writeidx_3
+    -------------------------------------------------  ---------------------------
+    Total                                     10.683ns (1.072ns logic, 9.611ns route)
+                                                       (10.0% logic, 90.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_62_5"
+        TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/pcie/PCIE_A1 (PCIE_X0Y0.TRNTD30), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.018ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_td_30 (FF)
+  Destination:          xillybus_ins/pcie/PCIE_A1 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.006ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.012ns (0.195 - 0.207)
+  Source Clock:         bus_clk rising at 16.000ns
+  Destination Clock:    bus_clk rising at 16.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_td_30 to xillybus_ins/pcie/PCIE_A1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y94.DQ       Tcko                  0.198   xillybus_ins/trn_td<30>
+                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_td_30
+    PCIE_X0Y0.TRNTD30    net (fanout=1)        0.658   xillybus_ins/trn_td<30>
+    PCIE_X0Y0.USERCLK    Tpcickd_TRNTD(-Th)     0.850   xillybus_ins/pcie/PCIE_A1
+                                                       xillybus_ins/pcie/PCIE_A1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.006ns (-0.652ns logic, 0.658ns route)
+                                                       (-10866.7% logic, 10966.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/pcie/PCIE_A1 (PCIE_X0Y0.TRNTEOFN), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.026ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_teof_n (FF)
+  Destination:          xillybus_ins/pcie/PCIE_A1 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.024ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.002ns (0.195 - 0.197)
+  Source Clock:         bus_clk rising at 16.000ns
+  Destination Clock:    bus_clk rising at 16.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_teof_n to xillybus_ins/pcie/PCIE_A1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y89.AQ      Tcko                  0.200   xillybus_ins/trn_teof_n
+                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_teof_n
+    PCIE_X0Y0.TRNTEOFN   net (fanout=2)        0.674   xillybus_ins/trn_teof_n
+    PCIE_X0Y0.USERCLK    Tpcickd_TRNTE(-Th)     0.850   xillybus_ins/pcie/PCIE_A1
+                                                       xillybus_ins/pcie/PCIE_A1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.024ns (-0.650ns logic, 0.674ns route)
+                                                       (-2708.3% logic, 2808.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/pcie/PCIE_A1 (PCIE_X0Y0.TRNTD21), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.032ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_td_21 (FF)
+  Destination:          xillybus_ins/pcie/PCIE_A1 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.032ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising at 16.000ns
+  Destination Clock:    bus_clk rising at 16.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_td_21 to xillybus_ins/pcie/PCIE_A1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y87.BQ       Tcko                  0.198   xillybus_ins/trn_td<22>
+                                                       xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_compose/trn_td_21
+    PCIE_X0Y0.TRNTD21    net (fanout=1)        0.684   xillybus_ins/trn_td<21>
+    PCIE_X0Y0.USERCLK    Tpcickd_TRNTD(-Th)     0.850   xillybus_ins/pcie/PCIE_A1
+                                                       xillybus_ins/pcie/PCIE_A1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.032ns (-0.652ns logic, 0.684ns route)
+                                                       (-2037.5% logic, 2137.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_xillybus_ins_pcie_clk_62_5 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_62_5"
+        TS_xillybus_ins_pcie_gt_refclk_buf / 0.625 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.000ns (period - min period limit)
+  Period: 16.000ns
+  Min period limit: 16.000ns (62.500MHz) (Tpciper_USERCLK)
+  Physical resource: xillybus_ins/pcie/PCIE_A1/USERCLK
+  Logical resource: xillybus_ins/pcie/PCIE_A1/USERCLK
+  Location pin: PCIE_X0Y0.USERCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+Slack: 12.876ns (period - min period limit)
+  Period: 16.000ns
+  Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
+  Physical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKAWRCLK
+  Logical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKAWRCLK
+  Location pin: RAMB8_X2Y15.CLKAWRCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+Slack: 12.876ns (period - min period limit)
+  Period: 16.000ns
+  Min period limit: 3.124ns (320.102MHz) (Trper_CLKB(Fmax))
+  Physical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKBRDCLK
+  Logical resource: xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem/CLKBRDCLK
+  Location pin: RAMB8_X2Y15.CLKBRDCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_xillybus_ins_pcie_clk_250 = PERIOD TIMEGRP 
+"xillybus_ins_pcie_clk_250"         TS_xillybus_ins_pcie_gt_refclk_buf / 2.5 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.125ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_xillybus_ins_pcie_clk_250 = PERIOD TIMEGRP "xillybus_ins_pcie_clk_250"
+        TS_xillybus_ins_pcie_gt_refclk_buf / 2.5 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.875ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 3.125ns (320.000MHz) (Tgtpcper_RXUSRCLK)
+  Physical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/RXUSRCLK0
+  Logical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/RXUSRCLK0
+  Location pin: GTPA1_DUAL_X0Y0.RXUSRCLK0
+  Clock network: xillybus_ins/pcie/mgt_clk_2x
+--------------------------------------------------------------------------------
+Slack: 0.875ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 3.125ns (320.000MHz) (Tgtpcper_TXUSRCLK)
+  Physical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/TXUSRCLK0
+  Logical resource: xillybus_ins/pcie/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i/TXUSRCLK0
+  Location pin: GTPA1_DUAL_X0Y0.TXUSRCLK0
+  Clock network: xillybus_ins/pcie/mgt_clk_2x
+--------------------------------------------------------------------------------
+Slack: 2.270ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: xillybus_ins/pcie/mgt2x_bufg/I0
+  Logical resource: xillybus_ins/pcie/mgt2x_bufg/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: xillybus_ins/pcie/clk_250
+--------------------------------------------------------------------------------
+
 
 Derived Constraint Report
 Derived Constraints for TS_GT_REFCLK_OUT
@@ -821,12 +601,12 @@ Derived Constraints for TS_GT_REFCLK_OUT
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GT_REFCLK_OUT               |     10.000ns|      0.925ns|     10.000ns|            0|            0|            0|       140573|
-| TS_xillybus_ins_pcie_gt_refclk|     10.000ns|      3.334ns|     10.000ns|            0|            0|            0|       140573|
+|TS_GT_REFCLK_OUT               |     10.000ns|      0.925ns|     10.000ns|            0|            0|            0|       140616|
+| TS_xillybus_ins_pcie_gt_refclk|     10.000ns|      3.334ns|     10.000ns|            0|            0|            0|       140616|
 | _buf                          |             |             |             |             |             |             |             |
-|  TS_xillybus_ins_pcie_clk_62_5|     16.000ns|     16.000ns|          N/A|            0|            0|       140528|            0|
-|  TS_xillybus_ins_pcie_clk_250 |      4.000ns|      3.125ns|          N/A|            0|            0|            0|            0|
 |  TS_xillybus_ins_pcie_clk_125 |      8.000ns|      8.000ns|          N/A|            0|            0|           45|            0|
+|  TS_xillybus_ins_pcie_clk_62_5|     16.000ns|     16.000ns|          N/A|            0|            0|       140571|            0|
+|  TS_xillybus_ins_pcie_clk_250 |      4.000ns|      3.125ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -843,7 +623,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 140573 paths, 0 nets, and 13292 connections
+Constraints cover 140616 paths, 0 nets, and 13298 connections
 
 Design statistics:
    Minimum period:  16.000ns{1}   (Maximum frequency:  62.500MHz)
@@ -852,7 +632,7 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Apr 20 11:00:20 2018 
+Analysis completed Tue Apr 24 09:35:42 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

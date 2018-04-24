@@ -51,7 +51,7 @@ module s6_fifo(
 input rst;
 input wr_clk;
 input rd_clk;
-input [15 : 0] din;
+input [31 : 0] din;
 input wr_en;
 input rd_en;
 output [31 : 0] dout;
@@ -88,7 +88,7 @@ output empty;
     .C_COUNT_TYPE(0),
     .C_DATA_COUNT_WIDTH(8),
     .C_DEFAULT_VALUE("BlankString"),
-    .C_DIN_WIDTH(16),
+    .C_DIN_WIDTH(32),
     .C_DIN_WIDTH_AXIS(1),
     .C_DIN_WIDTH_RACH(32),
     .C_DIN_WIDTH_RDCH(64),
@@ -201,10 +201,10 @@ output empty;
     .C_PROG_FULL_TYPE_WDCH(5),
     .C_PROG_FULL_TYPE_WRCH(5),
     .C_RACH_TYPE(0),
-    .C_RD_DATA_COUNT_WIDTH(7),
-    .C_RD_DEPTH(128),
+    .C_RD_DATA_COUNT_WIDTH(8),
+    .C_RD_DEPTH(256),
     .C_RD_FREQ(1),
-    .C_RD_PNTR_WIDTH(7),
+    .C_RD_PNTR_WIDTH(8),
     .C_RDCH_TYPE(0),
     .C_REG_SLICE_MODE_AXIS(0),
     .C_REG_SLICE_MODE_RACH(0),

@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: ae_inst.prj
 
@@ -220,12 +220,12 @@ WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\pcie\source\pcie
 
 Elaborating module <xillybus_core>.
 WARNING:HDLCompiler:1499 - "D:\GitHub\AE-XILLYBUS\AE\src\xillybus_core.v" Line 1: Empty module <xillybus_core> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 43: Assignment to user_w_write_32_wren ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 45: Assignment to user_w_write_32_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 46: Assignment to user_w_write_32_open ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 53: Size mismatch in connection of port <GPIO_LED>. Formal port size is 4-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 53: Assignment to GPIO_LED ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 57: Assignment to quiesce ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 44: Assignment to user_w_write_32_wren ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 46: Assignment to user_w_write_32_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 47: Assignment to user_w_write_32_open ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 54: Size mismatch in connection of port <GPIO_LED>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 54: Assignment to GPIO_LED ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 58: Assignment to quiesce ignored, since the identifier is never used
 
 Elaborating module <s6_clock>.
 
@@ -233,11 +233,11 @@ Elaborating module <IBUFG>.
 
 Elaborating module <DCM_SP(CLKDV_DIVIDE=5.0,CLKFX_DIVIDE=10,CLKFX_MULTIPLY=2,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
 WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_clock.v" Line 132: Assignment to status_int ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 67: Assignment to clk_50M ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 70: Assignment to LOCKED ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 68: Assignment to clk_50M ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 71: Assignment to LOCKED ignored, since the identifier is never used
 
 Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
-WARNING:HDLCompiler:413 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 93: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 94: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" Line 123: Result of 4-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <s6_fifo>.
@@ -249,23 +249,19 @@ WARNING:HDLCompiler:1499 - "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_fifo.v" Line 
 
 Synthesizing Unit <ae_inst>.
     Related source file is "d:/github/ae-xillybus/ae/src/ae_top.v".
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 33: Output port <GPIO_LED> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 33: Output port <user_w_write_32_data> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 33: Output port <quiesce> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 33: Output port <user_w_write_32_wren> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 33: Output port <user_w_write_32_open> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 65: Output port <CLK_OUT1> of the instance <pll_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 65: Output port <LOCKED> of the instance <pll_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 34: Output port <GPIO_LED> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 34: Output port <user_w_write_32_data> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 34: Output port <quiesce> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 34: Output port <user_w_write_32_wren> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 34: Output port <user_w_write_32_open> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 66: Output port <CLK_OUT1> of the instance <pll_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "d:/github/ae-xillybus/ae/src/ae_top.v" line 66: Output port <LOCKED> of the instance <pll_inst> is unconnected or connected to loadless signal.
     Found 3-bit register for signal <cnt>.
-    Found 16-bit register for signal <din>.
-    Found 16-bit adder for signal <din[15]_GND_1_o_add_5_OUT> created at line 106.
-    Found 3-bit adder for signal <cnt[2]_GND_1_o_add_10_OUT> created at line 123.
-    Found 16-bit comparator greater for signal <din[15]_GND_1_o_LessThan_5_o> created at line 105
+    Found 32-bit register for signal <din>.
+    Found 3-bit adder for signal <cnt[2]_GND_1_o_add_7_OUT> created at line 123.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  19 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
 Unit <ae_inst> synthesized.
 
 Synthesizing Unit <xillybus>.
@@ -477,16 +473,11 @@ Unit <s6_clock> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 16-bit adder                                          : 1
+# Adders/Subtractors                                   : 1
  3-bit adder                                           : 1
 # Registers                                            : 2
- 16-bit register                                       : 1
  3-bit register                                        : 1
-# Comparators                                          : 1
- 16-bit comparator greater                             : 1
-# Multiplexers                                         : 1
- 16-bit 2-to-1 multiplexer                             : 1
+ 32-bit register                                       : 1
 
 =========================================================================
 
@@ -498,6 +489,18 @@ Reading core <ipcore_dir/s6_fifo.ngc>.
 Reading core <D:/GitHub/AE-XILLYBUS/AE/core/xillybus_core.ngc>.
 Loading core <s6_fifo> for timing and area information for instance <fifo_inst>.
 Loading core <xillybus_core> for timing and area information for instance <xillybus_core_ins>.
+WARNING:Xst:1710 - FF/Latch <din_14> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_15> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_16> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_17> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_19> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_21> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_23> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_26> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_27> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_29> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_31> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <din<31:31>> (without init value) have a constant value of 0 in block <ae_inst>.
 
 Synthesizing (advanced) Unit <ae_inst>.
 The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
@@ -507,39 +510,32 @@ Unit <ae_inst> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 16-bit adder                                          : 1
 # Counters                                             : 1
  3-bit up counter                                      : 1
-# Registers                                            : 16
- Flip-Flops                                            : 16
-# Comparators                                          : 1
- 16-bit comparator greater                             : 1
-# Multiplexers                                         : 1
- 16-bit 2-to-1 multiplexer                             : 1
+# Registers                                            : 31
+ Flip-Flops                                            : 31
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <din_14> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_15> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_16> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_17> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_19> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_21> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_23> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_26> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_27> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_29> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <din_18> in Unit <ae_inst> is equivalent to the following 6 FFs/Latches, which will be removed : <din_20> <din_22> <din_24> <din_25> <din_28> <din_30> 
 INFO:Xst:1901 - Instance pll_base_i in unit pll_base_i of type PLL_BASE has been replaced by PLL_ADV
 
 Optimizing unit <ae_inst> ...
 
 Optimizing unit <pcie> ...
-WARNING:Xst:1710 - FF/Latch <din_4> (without init value) has a constant value of 1 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_5> (without init value) has a constant value of 1 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_6> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_7> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_12> (without init value) has a constant value of 1 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_13> (without init value) has a constant value of 1 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_14> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <din_15> (without init value) has a constant value of 0 in block <ae_inst>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <din_8> in Unit <ae_inst> is equivalent to the following FF/Latch, which will be removed : <din_0> 
-INFO:Xst:2261 - The FF/Latch <din_9> in Unit <ae_inst> is equivalent to the following FF/Latch, which will be removed : <din_1> 
-INFO:Xst:2261 - The FF/Latch <din_10> in Unit <ae_inst> is equivalent to the following FF/Latch, which will be removed : <din_2> 
-INFO:Xst:2261 - The FF/Latch <din_11> in Unit <ae_inst> is equivalent to the following FF/Latch, which will be removed : <din_3> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -573,8 +569,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 7
- Flip-Flops                                            : 7
+# Registers                                            : 18
+ Flip-Flops                                            : 18
 
 =========================================================================
 
@@ -597,23 +593,24 @@ Top Level Output File Name         : ae_inst.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4218
+# BELS                             : 4210
 #      GND                         : 4
-#      INV                         : 119
-#      LUT1                        : 123
-#      LUT2                        : 401
-#      LUT3                        : 745
-#      LUT4                        : 353
-#      LUT5                        : 427
-#      LUT6                        : 740
-#      MUXCY                       : 687
-#      MUXF7                       : 21
+#      INV                         : 118
+#      LUT1                        : 120
+#      LUT2                        : 403
+#      LUT3                        : 748
+#      LUT4                        : 354
+#      LUT5                        : 420
+#      LUT6                        : 745
+#      MUXCY                       : 684
+#      MUXF7                       : 20
 #      VCC                         : 3
-#      XORCY                       : 595
-# FlipFlops/Latches                : 2504
+#      XORCY                       : 591
+# FlipFlops/Latches                : 2525
 #      FD                          : 110
-#      FDC                         : 57
-#      FDCE                        : 38
+#      FDC                         : 65
+#      FDCE                        : 36
+#      FDCE_1                      : 15
 #      FDE                         : 1622
 #      FDP                         : 13
 #      FDPE                        : 4
@@ -628,15 +625,15 @@ Primitive and Black Box Usage:
 #      RAM32X1D                    : 3
 #      RAM64M                      : 16
 #      RAM64X1D                    : 16
-#      RAMB16BWER                  : 9
-#      RAMB8BWER                   : 5
+#      RAMB16BWER                  : 8
+#      RAMB8BWER                   : 6
 # Shift Registers                  : 2
 #      SRLC16E                     : 2
 # Clock Buffers                    : 5
 #      BUFG                        : 5
-# IO Buffers                       : 10
+# IO Buffers                       : 24
 #      BUFIO2                      : 1
-#      IBUF                        : 4
+#      IBUF                        : 18
 #      IBUFDS                      : 1
 #      IBUFG                       : 1
 #      OBUF                        : 3
@@ -655,7 +652,7 @@ Selected Device : 6slx45tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2504  out of  54576     4%  
+ Number of Slice Registers:            2525  out of  54576     4%  
  Number of Slice LUTs:                 3052  out of  27288    11%  
     Number used as Logic:              2908  out of  27288    10%  
     Number used as Memory:              144  out of   6408     2%  
@@ -663,19 +660,19 @@ Slice Logic Utilization:
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3910
-   Number with an unused Flip Flop:    1406  out of   3910    35%  
-   Number with an unused LUT:           858  out of   3910    21%  
-   Number of fully used LUT-FF pairs:  1646  out of   3910    42%  
+ Number of LUT Flip Flop pairs used:   3927
+   Number with an unused Flip Flop:    1402  out of   3927    35%  
+   Number with an unused LUT:           875  out of   3927    22%  
+   Number of fully used LUT-FF pairs:  1650  out of   3927    42%  
    Number of unique control sets:       110
 
 IO Utilization: 
- Number of IOs:                          10
- Number of bonded IOBs:                  10  out of    190     5%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    190    12%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               12  out of    116    10%  
-    Number using Block RAM only:         12
+ Number of Block RAM/FIFO:               11  out of    116     9%  
+    Number using Block RAM only:         11
  Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
  Number of PLL_ADVs:                      1  out of      4    25%  
 
@@ -700,8 +697,8 @@ Clock Information:
 ------------------------------------+------------------------+-------+
 Clock Signal                        | Clock buffer(FF name)  | Load  |
 ------------------------------------+------------------------+-------+
-CLK_IN_50M                          | DCM_SP:CLKFX           | 70    |
-xillybus_ins/pcie/pll_base_i/CLKOUT2| BUFG                   | 2501  |
+CLK_IN_50M                          | DCM_SP:CLKFX           | 85    |
+xillybus_ins/pcie/pll_base_i/CLKOUT2| BUFG                   | 2507  |
 ------------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -723,35 +720,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_IN_50M'
-  Clock period: 0.954ns (frequency: 1047.779MHz)
-  Total number of paths / destination ports: 448 / 159
+  Clock period: 1.172ns (frequency: 853.432MHz)
+  Total number of paths / destination ports: 493 / 186
 -------------------------------------------------------------------------
-Delay:               4.772ns (Levels of Logic = 5)
+Delay:               2.929ns (Levels of Logic = 2)
   Source:            fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
-  Destination:       fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
+  Destination:       din_0 (FF)
   Source Clock:      CLK_IN_50M rising 0.2X
-  Destination Clock: CLK_IN_50M rising 0.2X
+  Destination Clock: CLK_IN_50M falling 0.2X
 
-  Data Path: fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i to fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+  Data Path: fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i to din_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDP:C->Q              4   0.447   0.931  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (full)
      end scope: 'fifo_inst:full'
-     LUT4:I0->O            6   0.203   1.089  wr_en1 (wr_en)
-     begin scope: 'fifo_inst:wr_en'
-     LUT5:I0->O            1   0.203   0.808  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_206_o_MUX_19_o12 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_206_o_MUX_19_o11)
-     LUT6:I3->O            1   0.205   0.580  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_206_o_MUX_19_o14 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_206_o_MUX_19_o13)
-     LUT5:I4->O            2   0.205   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_206_o_MUX_19_o18 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1_GND_206_o_MUX_19_o)
-     FDP:D                     0.102          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+     LUT4:I0->O           17   0.203   1.027  wr_en1 (wr_en)
+     FDCE_1:CE                 0.322          din_0
     ----------------------------------------
-    Total                      4.772ns (1.365ns logic, 3.407ns route)
-                                       (28.6% logic, 71.4% route)
+    Total                      2.929ns (0.972ns logic, 1.957ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'xillybus_ins/pcie/pll_base_i/CLKOUT2'
   Clock period: 6.493ns (frequency: 154.014MHz)
-  Total number of paths / destination ports: 138548 / 5861
+  Total number of paths / destination ports: 138591 / 5875
 -------------------------------------------------------------------------
 Delay:               6.493ns (Levels of Logic = 5)
   Source:            xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_dissect/header0_26 (FF)
@@ -776,22 +769,22 @@ Delay:               6.493ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_IN_50M'
-  Total number of paths / destination ports: 7 / 7
+  Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              2.425ns (Levels of Logic = 1)
+Offset:              2.701ns (Levels of Logic = 1)
   Source:            RESET (PAD)
-  Destination:       din_8 (FF)
-  Destination Clock: CLK_IN_50M rising 0.2X
+  Destination:       din_0 (FF)
+  Destination Clock: CLK_IN_50M falling 0.2X
 
-  Data Path: RESET to din_8
+  Data Path: RESET to din_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   1.222   0.773  RESET_IBUF (RESET_IBUF)
-     FDCE:CLR                  0.430          din_8
+     IBUF:I->O            18   1.222   1.049  RESET_IBUF (RESET_IBUF)
+     FDCE_1:CLR                0.430          din_0
     ----------------------------------------
-    Total                      2.425ns (1.652ns logic, 0.773ns route)
-                                       (68.1% logic, 31.9% route)
+    Total                      2.701ns (1.652ns logic, 1.049ns route)
+                                       (61.2% logic, 38.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'xillybus_ins/pcie/pll_base_i/CLKOUT2'
@@ -868,7 +861,7 @@ Clock to Setup on destination clock CLK_IN_50M
                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------+---------+---------+---------+---------+
-CLK_IN_50M                          |    4.772|         |         |         |
+CLK_IN_50M                          |    5.055|    1.520|    2.929|         |
 xillybus_ins/pcie/pll_base_i/CLKOUT2|    2.599|         |         |         |
 ------------------------------------+---------+---------+---------+---------+
 
@@ -884,14 +877,14 @@ xillybus_ins/pcie/pll_base_i/CLKOUT2|    6.493|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.94 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.54 secs
  
 --> 
 
 Total memory usage is 270700 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   63 (   0 filtered)
-Number of infos    :   71 (   0 filtered)
+Number of warnings :   77 (   0 filtered)
+Number of infos    :   68 (   0 filtered)
 

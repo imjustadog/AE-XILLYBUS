@@ -3,6 +3,7 @@ module ae_inst(
 	input CLK_IN_50M, //时钟模块
    input RESET,
 	output CLK_AD_10M,
+	input [0:13] DATA_AD_IN,
 	
    input  PCIE_250M_N,
    input  PCIE_250M_P,
@@ -86,26 +87,25 @@ ODDR2 #(
 );
 
 reg [2:0] cnt;
-wire [15:0] din_wire;
-reg [15:0] din;
+wire [31:0] din_wire;
+reg [31:0] din;
 assign din_wire = din;
 wire wr_en;
 assign wr_en = (user_w_write_32_full==0 && cnt==5)?1:0 ;//非满时写，且满后就不再写了，即便之后数据被读取导致非满
 
-always@(posedge clk_10M or posedge RESET) 
+always@(negedge clk_10M or posedge RESET) 
 begin
 	if(RESET) 
 		begin
-			din <= 16'h3030;
+			din <= 32'h00000000;
 		end
 	else 
 		begin
 			if(wr_en)
 				begin
-					if(din < 16'h3939)
-						din <= din + 16'h0101;
-					else
-						din <= 16'h3030;
+					din[15:14] <= 2'b00;
+					din[13:0] <= DATA_AD_IN;
+					din[31:16] <= 16'h5354;
 				end
 			else 
 				din <= din;
