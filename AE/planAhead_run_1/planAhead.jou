@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
+# Start of session at: Wed Apr 25 08:43:13 2018
+# Process ID: 11244
+# Log file: D:/GitHub/AE-XILLYBUS/AE/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/AE-XILLYBUS/AE/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/GitHub/AE-XILLYBUS/AE/pa.fromHdl.tcl
+exit
+stop_gui

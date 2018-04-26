@@ -67,3 +67,39 @@ map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -r
 par -w -intstyle ise -ol high -mt off ae_inst_map.ncd ae_inst.ncd ae_inst.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ae_inst.twx ae_inst.ncd -o ae_inst.twr ae_inst.pcf 
 bitgen -intstyle ise -f ae_inst.ut ae_inst.ncd 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd core -nt timestamp -uc src/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 ae_inst.ngc ae_inst.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ae_inst_map.ncd ae_inst.ngd ae_inst.pcf 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd core -nt timestamp -uc src/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 ae_inst.ngc ae_inst.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ae_inst_map.ncd ae_inst.ngd ae_inst.pcf 
+par -w -intstyle ise -ol high -mt off ae_inst_map.ncd ae_inst.ncd ae_inst.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ae_inst.twx ae_inst.ncd -o ae_inst.twr ae_inst.pcf 
+bitgen -intstyle ise -f ae_inst.ut ae_inst.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd core -nt timestamp -uc src/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 ae_inst.ngc ae_inst.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ae_inst_map.ncd ae_inst.ngd ae_inst.pcf 
+par -w -intstyle ise -ol high -mt off ae_inst_map.ncd ae_inst.ncd ae_inst.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ae_inst.twx ae_inst.ncd -o ae_inst.twr ae_inst.pcf 
+bitgen -intstyle ise -f ae_inst.ut ae_inst.ncd 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd core -nt timestamp -uc src/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 ae_inst.ngc ae_inst.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ae_inst_map.ncd ae_inst.ngd ae_inst.pcf 
+par -w -intstyle ise -ol high -mt off ae_inst_map.ncd ae_inst.ncd ae_inst.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ae_inst.twx ae_inst.ncd -o ae_inst.twr ae_inst.pcf 
+bitgen -intstyle ise -f ae_inst.ut ae_inst.ncd 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd core -nt timestamp -uc src/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 ae_inst.ngc ae_inst.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ae_inst_map.ncd ae_inst.ngd ae_inst.pcf 
+par -w -intstyle ise -ol high -mt off ae_inst_map.ncd ae_inst.ncd ae_inst.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ae_inst.twx ae_inst.ncd -o ae_inst.twr ae_inst.pcf 
+bitgen -intstyle ise -f ae_inst.ut ae_inst.ncd 
+xst -intstyle ise -ifn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.xst" -ofn "D:/GitHub/AE-XILLYBUS/AE/ae_inst.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd core -nt timestamp -uc src/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 ae_inst.ngc ae_inst.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ae_inst_map.ncd ae_inst.ngd ae_inst.pcf 
+par -w -intstyle ise -ol high -mt off ae_inst_map.ncd ae_inst.ncd ae_inst.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ae_inst.twx ae_inst.ncd -o ae_inst.twr ae_inst.pcf 
+bitgen -intstyle ise -f ae_inst.ut ae_inst.ncd 

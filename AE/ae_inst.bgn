@@ -5,7 +5,7 @@ C:\Xilinx\13.4\ISE_DS\ISE\.
    "ae_inst" is an NCD, version 3.2, device xc6slx45t, package csg324, speed -3
 Opened constraints file ae_inst.pcf.
 
-Tue Apr 24 09:35:48 2018
+Wed Apr 25 09:25:46 2018
 
 C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 ae_inst.ncd 
 
@@ -131,12 +131,12 @@ There were 0 CONFIG constraint(s) processed from ae_inst.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
-   fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram3/Mram_
+   fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
-   fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram3/Mram_
+   fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram3/Mram_
@@ -147,59 +147,53 @@ WARNING:PhysDesignRules:367 - The signal
    fifo_ram1_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
-   fifo_ram2_RAMD_O> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram3/Mram_
-   fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram3/Mram_
-   fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
-   fifo_ram2_RAMD_O> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
-   fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
    fifo_ram1_RAMD_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
+   fifo_ram2_RAMD_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
+   fifo_ram2_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
    fifo_ram1_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
    fifo_ram2_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
    fifo_ram1_RAMD_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
+   fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
+   fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram1/Mram_
+   fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
    fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
+   <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram0/Mram_
    fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_send_dma_ins/xillybus_wr_fifo/ram2/Mram_
-   fifo_ram3_RAMD_O> is incomplete. The signal does not drive any load pins in
+   fifo_ram4_RAMD_O> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets2_RAMD_D1_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets1_RAMD_D1_O>
-   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_recv_dma_ins/Mram_track_end_offset12_RAM
    D_D1_O> is incomplete. The signal does not drive any load pins in the design.
@@ -207,8 +201,14 @@ WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_recv_dma_ins/Mram_track_end_offset11_RAM
    D_D1_O> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets1_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_recv_dma_ins/Mram_track_end_offset2_RAMD
    _D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets2_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <xillybus_ins/xillybus_core_ins/pcie_recv_dma_ins/Mram_track_end_offset1_RAMD
    _D1_O> is incomplete. The signal does not drive any load pins in the design.

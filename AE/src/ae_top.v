@@ -2,8 +2,10 @@ module ae_inst(
    
 	input CLK_IN_50M, //时钟模块
    input RESET,
-	output CLK_AD_10M,
-	input [0:13] DATA_AD_IN,
+	output CLK_AD_10M_1,
+	output CLK_AD_10M_2,
+	input [0:13] DATA_AD_IN_1,
+	input [0:13] DATA_AD_IN_2,
 	
    input  PCIE_250M_N,
    input  PCIE_250M_P,
@@ -75,10 +77,25 @@ ODDR2 #(
    .DDR_ALIGNMENT("NONE"), // Sets output alignment
    .INIT(1'b0),    // Sets initial state of the Q 
    .SRTYPE("SYNC") // Specifies "SYNC" or "ASYNC"
-) ODDR2_inst (
-   .Q(CLK_AD_10M),   // 1-bit DDR output data
-   .C0(clk_10M), // 1-bit clock input
-   .C1(~clk_10M), // 1-bit clock input
+) ODDR2_inst_1 (
+   .Q(CLK_AD_10M_1),   // 1-bit DDR output data
+   .C0(~clk_10M), // 1-bit clock input
+   .C1(clk_10M), // 1-bit clock input
+   .CE(1'b1), // 1-bit clock enable input
+   .D0(1'b1), // 1-bit data input (associated with C0)
+   .D1(1'b0), // 1-bit data input (associated with C1)
+   .R(1'b0),   // 1-bit reset input
+   .S(1'b0)    // 1-bit set input
+);
+
+ODDR2 #(
+   .DDR_ALIGNMENT("NONE"), // Sets output alignment
+   .INIT(1'b0),    // Sets initial state of the Q 
+   .SRTYPE("SYNC") // Specifies "SYNC" or "ASYNC"
+) ODDR2_inst_2 (
+   .Q(CLK_AD_10M_2),   // 1-bit DDR output data
+   .C0(~clk_10M), // 1-bit clock input
+   .C1(clk_10M), // 1-bit clock input
    .CE(1'b1), // 1-bit clock enable input
    .D0(1'b1), // 1-bit data input (associated with C0)
    .D1(1'b0), // 1-bit data input (associated with C1)
@@ -93,7 +110,7 @@ assign din_wire = din;
 wire wr_en;
 assign wr_en = (user_w_write_32_full==0 && cnt==5)?1:0 ;//非满时写，且满后就不再写了，即便之后数据被读取导致非满
 
-always@(negedge clk_10M or posedge RESET) 
+always@(posedge clk_10M or posedge RESET) 
 begin
 	if(RESET) 
 		begin
@@ -103,9 +120,8 @@ begin
 		begin
 			if(wr_en)
 				begin
-					din[15:14] <= 2'b00;
-					din[13:0] <= DATA_AD_IN;
-					din[31:16] <= 16'h5354;
+					din[13:0] <= DATA_AD_IN_1;
+					din[29:16] <= DATA_AD_IN_2;
 				end
 			else 
 				din <= din;

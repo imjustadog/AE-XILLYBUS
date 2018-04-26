@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue Apr 24 09:33:55 2018">
+  <application stringID="NgdBuild" timeStamp="Wed Apr 25 09:23:46 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -76,8 +76,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_DCM_SP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="110"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="65"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="36"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE_1" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="64"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="1622"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="13"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="4"/>
@@ -87,7 +86,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="75"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GTPA1_DUAL" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="18"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="32"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFDS" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="118"/>
@@ -99,8 +98,8 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="745"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="684"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="20"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_ODDR2" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_ODDR2" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_PCIE_A1" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAM16X1D" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAM32M" value="6"/>
@@ -119,8 +118,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_DCM_SP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="110"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="65"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="36"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE_1" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="64"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="1622"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="13"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="4"/>
@@ -130,7 +128,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="75"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GTPA1_DUAL" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="18"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="32"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFDS" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="118"/>
@@ -142,8 +140,8 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="745"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="684"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="20"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_ODDR2" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_ODDR2" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_PCIE_A1" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_PLL_ADV" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="1"/>
