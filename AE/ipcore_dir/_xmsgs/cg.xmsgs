@@ -8,5 +8,12 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
+<msg type="error" file="coreutil" num="1010" delta="new" >Command &apos;<arg fmt="%s" index="1">C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe -cg_exc_inp ./tmp/_cg/xil_7580_5.in -cg_exc_out ./tmp/_cg/xil_7580_5.out -namelock</arg>&apos; failed, returning a non-zero exit code &apos;<arg fmt="%x" index="2">2</arg>&apos;:
+<arg fmt="%s" index="3">C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe: unknown error occurred.</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;pcie&apos;.  An error occurred. Please see the log for details.
+</msg>
+
 </messages>
 

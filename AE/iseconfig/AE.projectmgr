@@ -7,17 +7,16 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/ae_inst D:|GitHub|AE-XILLYBUS|AE|src|ae_top.v/xillybus_ins - xillybus</ClosedNode>
          <ClosedNode>/xillybus D:|GitHub|AE-XILLYBUS|AE|src|xillybus.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ae_inst (D:/GitHub/AE-XILLYBUS/AE/src/ae_top.v)</SelectedItem>
+         <SelectedItem>pcie - pcie (D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/pcie.xco)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000154000000020000000000000000000000000200000064ffffffff000000810000000300000002000001540000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ae_inst (D:/GitHub/AE-XILLYBUS/AE/src/ae_top.v)</CurrentItem>
+      <CurrentItem>pcie - pcie (D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/pcie.xco)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -82,13 +81,13 @@
          <ClosedNode>CORE Generator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000167000000010000000100000000000000000000000064ffffffff000000810000000000000001000001670000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

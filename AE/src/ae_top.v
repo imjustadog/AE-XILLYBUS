@@ -108,7 +108,7 @@ wire [31:0] din_wire;
 reg [31:0] din;
 assign din_wire = din;
 wire wr_en;
-assign wr_en = (user_w_write_32_full==0 && cnt==5)?1:0 ;//非满时写，且满后就不再写了，即便之后数据被读取导致非满
+assign wr_en = (user_w_write_32_full==0 && cnt==5)?1:0 ;//非满时写，满后就不再写了，直至数据被读取导致非满
 
 always@(posedge clk_10M or posedge RESET) 
 begin
