@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Wed Apr 25 09:24:55 2018">
+  <application stringID="par" timeStamp="Tue Jun 05 14:50:23 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -63,12 +63,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="37 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="36 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="31 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="31 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="38 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="37 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="32 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="32 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -87,17 +87,17 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y4"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="694.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.067000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.278000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="707.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.063000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.275000"/>
           </row>
           <row stringID="row" value="2">
             <item label="Clock Net" stringID="CLOCK_NET" value="clk_10M"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y2"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="30.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.504000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="47.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.516000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.729000"/>
           </row>
           <row stringID="row" value="3">
@@ -2385,7 +2385,7 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Wed Apr 25 09:24:55 2018">
+  <application stringID="Par" timeStamp="Tue Jun 05 14:50:23 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -2435,16 +2435,16 @@
     </section>
     <task label="Device Utilization Summary" stringID="PAR_DEVICE_UTLIZATION">
       <section stringID="PAR_SLICE_REPORTING">
-        <item AVAILABLE="54576" dataType="int" label="Number of Slice Registers" stringID="PAR_SLICE_REGISTERS" value="2350">
-          <item dataType="int" stringID="PAR_NUM_SLICE_FF" value="2318"/>
+        <item AVAILABLE="54576" dataType="int" label="Number of Slice Registers" stringID="PAR_SLICE_REGISTERS" value="2403">
+          <item dataType="int" stringID="PAR_NUM_SLICE_FF" value="2371"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCH" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHLOGIC" value="32"/>
         </item>
-        <item AVAILABLE="27288" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="2349">
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="84"/>
+        <item AVAILABLE="27288" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="2419">
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="106"/>
           <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="1328"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="730"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="766"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ANDO6" value="0"/>
@@ -2457,22 +2457,22 @@
           <item dataType="int" stringID="PAR_NUM_SRL_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SRL_O6ONLY" value="2"/>
           <item dataType="int" stringID="PAR_NUM_SRL_O5ANDO6" value="0"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO6" value="9"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO5" value="62"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO6" value="11"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO5" value="72"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_O5ANDO6" value="0"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_FLOP" value="62"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="9"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_FLOP" value="72"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="11"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="6822" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="905">
-          <item AVAILABLE="1809" dataType="int" stringID="PAR_NUM_SLICEL" value="192"/>
+        <item AVAILABLE="6822" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="911">
+          <item AVAILABLE="1809" dataType="int" stringID="PAR_NUM_SLICEL" value="206"/>
           <item AVAILABLE="1602" dataType="int" stringID="PAR_NUM_SLICEM" value="35"/>
-          <item AVAILABLE="3411" dataType="int" stringID="PAR_NUM_SLICEX" value="678"/>
+          <item AVAILABLE="3411" dataType="int" stringID="PAR_NUM_SLICEX" value="670"/>
         </item>
-        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="2851">
-          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="869"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="502"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="1480"/>
+        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="2907">
+          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="890"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="488"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="1529"/>
         </item>
       </section>
       <section stringID="PAR_IOB_REPORTING">
@@ -2491,7 +2491,7 @@
       </section>
       <section stringID="PAR_HARD_IP_REPORTING"/>
       <section stringID="PAR_RAM_FIFO_DATA">
-        <item AVAILABLE="116" dataType="int" stringID="PAR_NUM_RAMB16BWER" value="8"/>
+        <item AVAILABLE="116" dataType="int" stringID="PAR_NUM_RAMB16BWER" value="15"/>
         <item AVAILABLE="232" dataType="int" stringID="PAR_NUM_RAMB8BWER" value="6"/>
       </section>
       <section stringID="PAR_IP_DATA">

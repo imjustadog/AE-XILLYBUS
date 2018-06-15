@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: ae_inst.prj
 
@@ -128,12 +128,12 @@ Analyzing Verilog file "D:\GitHub\AE-XILLYBUS\AE\src\xillybus.v" into library wo
 Parsing module <xillybus>.
 Analyzing Verilog file "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_fifo.v" into library work
 Parsing module <s6_fifo>.
+Analyzing Verilog file "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_clock\example_design\s6_clock_exdes.v" into library work
+Parsing module <s6_clock_exdes>.
 Analyzing Verilog file "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_clock.v" into library work
 Parsing module <s6_clock>.
 Analyzing Verilog file "D:\GitHub\AE-XILLYBUS\AE\src\ae_top.v" into library work
 Parsing module <ae_inst>.
-Analyzing Verilog file "D:\GitHub\AE-XILLYBUS\AE\ipcore_dir\s6_clock\example_design\s6_clock_exdes.v" into library work
-Parsing module <s6_clock_exdes>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -597,38 +597,38 @@ Top Level Output File Name         : ae_inst.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4210
+# BELS                             : 4351
 #      GND                         : 4
-#      INV                         : 118
-#      LUT1                        : 120
-#      LUT2                        : 403
-#      LUT3                        : 748
-#      LUT4                        : 354
-#      LUT5                        : 420
-#      LUT6                        : 745
-#      MUXCY                       : 684
+#      INV                         : 119
+#      LUT1                        : 144
+#      LUT2                        : 415
+#      LUT3                        : 764
+#      LUT4                        : 380
+#      LUT5                        : 418
+#      LUT6                        : 740
+#      MUXCY                       : 730
 #      MUXF7                       : 20
-#      VCC                         : 3
-#      XORCY                       : 591
-# FlipFlops/Latches                : 2539
-#      FD                          : 110
-#      FDC                         : 65
-#      FDCE                        : 64
+#      VCC                         : 4
+#      XORCY                       : 613
+# FlipFlops/Latches                : 2592
+#      FD                          : 111
+#      FDC                         : 97
+#      FDCE                        : 85
 #      FDE                         : 1622
 #      FDP                         : 13
-#      FDPE                        : 4
+#      FDPE                        : 3
 #      FDR                         : 203
 #      FDRE                        : 373
 #      FDS                         : 8
 #      FDSE                        : 75
 #      ODDR2                       : 2
-# RAMS                             : 63
+# RAMS                             : 70
 #      RAM16X1D                    : 8
 #      RAM32M                      : 6
 #      RAM32X1D                    : 3
 #      RAM64M                      : 16
 #      RAM64X1D                    : 16
-#      RAMB16BWER                  : 8
+#      RAMB16BWER                  : 15
 #      RAMB8BWER                   : 6
 # Shift Registers                  : 2
 #      SRLC16E                     : 2
@@ -655,27 +655,27 @@ Selected Device : 6slx45tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2539  out of  54576     4%  
- Number of Slice LUTs:                 3052  out of  27288    11%  
-    Number used as Logic:              2908  out of  27288    10%  
+ Number of Slice Registers:            2592  out of  54576     4%  
+ Number of Slice LUTs:                 3124  out of  27288    11%  
+    Number used as Logic:              2980  out of  27288    10%  
     Number used as Memory:              144  out of   6408     2%  
        Number used as RAM:              142
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3941
-   Number with an unused Flip Flop:    1402  out of   3941    35%  
-   Number with an unused LUT:           889  out of   3941    22%  
-   Number of fully used LUT-FF pairs:  1650  out of   3941    41%  
-   Number of unique control sets:       110
+ Number of LUT Flip Flop pairs used:   4041
+   Number with an unused Flip Flop:    1449  out of   4041    35%  
+   Number with an unused LUT:           917  out of   4041    22%  
+   Number of fully used LUT-FF pairs:  1675  out of   4041    41%  
+   Number of unique control sets:       113
 
 IO Utilization: 
  Number of IOs:                          39
  Number of bonded IOBs:                  39  out of    190    20%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               11  out of    116     9%  
-    Number using Block RAM only:         11
+ Number of Block RAM/FIFO:               18  out of    116    15%  
+    Number using Block RAM only:         18
  Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
  Number of PLL_ADVs:                      1  out of      4    25%  
 
@@ -700,8 +700,8 @@ Clock Information:
 ------------------------------------+------------------------+-------+
 Clock Signal                        | Clock buffer(FF name)  | Load  |
 ------------------------------------+------------------------+-------+
-CLK_IN_50M                          | DCM_SP:CLKFX           | 100   |
-xillybus_ins/pcie/pll_base_i/CLKOUT2| BUFG                   | 2507  |
+CLK_IN_50M                          | DCM_SP:CLKFX           | 135   |
+xillybus_ins/pcie/pll_base_i/CLKOUT2| BUFG                   | 2539  |
 ------------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -723,35 +723,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_IN_50M'
-  Clock period: 1.058ns (frequency: 944.999MHz)
-  Total number of paths / destination ports: 552 / 206
+  Clock period: 1.004ns (frequency: 995.954MHz)
+  Total number of paths / destination ports: 1035 / 401
 -------------------------------------------------------------------------
-Delay:               5.291ns (Levels of Logic = 5)
+Delay:               5.020ns (Levels of Logic = 3)
   Source:            fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
-  Destination:       fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
+  Destination:       fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_11 (FF)
   Source Clock:      CLK_IN_50M rising 0.2X
   Destination Clock: CLK_IN_50M rising 0.2X
 
-  Data Path: fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i to fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+  Data Path: fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i to fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDP:C->Q              4   0.447   0.931  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (full)
      end scope: 'fifo_inst:full'
-     LUT4:I0->O           30   0.203   1.608  wr_en1 (wr_en)
+     LUT4:I0->O           35   0.203   1.439  wr_en1 (wr_en)
      begin scope: 'fifo_inst:wr_en'
-     LUT5:I0->O            1   0.203   0.808  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_222_o_MUX_12_o14 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_222_o_MUX_12_o13)
-     LUT6:I3->O            1   0.205   0.580  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_222_o_MUX_12_o15 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_222_o_MUX_12_o14)
-     LUT5:I4->O            2   0.205   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_222_o_MUX_12_o19 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1_GND_222_o_MUX_12_o)
-     FDP:D                     0.102          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+     LUT2:I0->O           45   0.203   1.476  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
+     FDPE:CE                   0.322          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1
     ----------------------------------------
-    Total                      5.291ns (1.365ns logic, 3.926ns route)
-                                       (25.8% logic, 74.2% route)
+    Total                      5.020ns (1.175ns logic, 3.845ns route)
+                                       (23.4% logic, 76.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'xillybus_ins/pcie/pll_base_i/CLKOUT2'
   Clock period: 6.493ns (frequency: 154.014MHz)
-  Total number of paths / destination ports: 138591 / 5875
+  Total number of paths / destination ports: 138944 / 6026
 -------------------------------------------------------------------------
 Delay:               6.493ns (Levels of Logic = 5)
   Source:            xillybus_ins/xillybus_core_ins/pcie_s6_request_ins/tlp_dissect/header0_26 (FF)
@@ -868,7 +866,7 @@ Clock to Setup on destination clock CLK_IN_50M
                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------+---------+---------+---------+---------+
-CLK_IN_50M                          |    5.291|         |         |         |
+CLK_IN_50M                          |    5.020|         |         |         |
 xillybus_ins/pcie/pll_base_i/CLKOUT2|    2.599|         |         |         |
 ------------------------------------+---------+---------+---------+---------+
 
@@ -884,8 +882,8 @@ xillybus_ins/pcie/pll_base_i/CLKOUT2|    6.493|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.17 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.45 secs
  
 --> 
 

@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION O.87xd
-DATE            04/25/2018 - 09:28
+DATE            06/05/2018 - 14:55
 SOURCE          D:\GitHub\AE-XILLYBUS\AE\download\ad9240.mcs
 DEVICE          8192K
 DATA_WIDTH      1
 FILL_DATA       0xFF
-SIGNATURE       0x69410779
+SIGNATURE       0x694550DA
 START_ADDRESS   0x00000000 END_ADDRESS 0x0016AAC7 DIRECTION_UP   "D:/GitHub/AE-XILLYBUS/AE/ae_inst.bit" 6slx45tcsg324

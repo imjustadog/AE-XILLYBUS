@@ -1,16 +1,59 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-Customizing IP...
-Release 13.4 - Xilinx CORE Generator IP GUI Launcher O.87xd (nt64)
-Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
-ERROR:coreutil:1010 - Command
-   'C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe -cg_exc_inp
-   ./tmp/_cg/xil_7580_5.in -cg_exc_out ./tmp/_cg/xil_7580_5.out -namelock'
-   failed, returning a non-zero exit code '2':
-   C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\_ipguilauncher.exe: unknown error
-   occurred.
-An Error occurred during Customization.
-ERROR:sim - Failed to generate 'pcie'.  An error occurred. Please see the log
-   for details.
-Wrote CGP file for project 'pcie'.
+WARNING:sim - A core named 's6_fifo' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 's6_fifo'...
+WARNING:sim - A core named 's6_fifo' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 's6_fifo'...
+Delivering associated files for 's6_fifo'...
+WARNING:sim - Can't find 'Verilog' synthesis view; using general synthesis view
+Delivering EJava files for 's6_fifo'...
+Generating implementation netlist for 's6_fifo'...
+INFO:sim - Pre-processing HDL files for 's6_fifo'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 's6_fifo'
+Running ngcbuild...
+Writing VEO instantiation template for 's6_fifo'...
+Writing Verilog behavioral simulation model for 's6_fifo'...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 's6_fifo'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: s6_fifo.xco
+XMDF file found: s6_fifo_xmdf.tcl
+Adding
+D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/fifo_generator_v8_4_readme.txt -view
+all -origin_type imported
+Adding D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.asy -view all
+-origin_type imported
+Adding D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.ngc -view all
+-origin_type created
+Checking file "D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.ngc" for
+project device match ...
+File "D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.ngc" device
+information matches project device.
+Adding D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.sym -view all
+-origin_type imported
+Adding D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.v -view all
+-origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/GitHub/AE-XILLYBUS/AE/ipcore_dir/tmp/_cg/s6_fifo.veo -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/s6_fifo"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 's6_fifo'.
